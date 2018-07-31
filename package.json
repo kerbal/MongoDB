@@ -4,7 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start": "node server/server.js",
     "test": "jest --config=jest.config.json --forceExit"
+  },
+  "engines": {
+    "node": "8.11.3"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
