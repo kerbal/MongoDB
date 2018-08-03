@@ -5,16 +5,20 @@
   "license": "MIT",
   "scripts": {
     "start": "node server/server.js",
-    "test": "jest --config=jest.config.json --forceExit"
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && jest --config=jest.config.json --forceExit"
   },
   "engines": {
     "node": "8.11.3"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
+    "crypto-js": "^3.1.9-1",
     "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
     "mongodb": "^3.1.1",
-    "mongoose": "^5.2.5"
+    "mongoose": "^5.2.5",
+    "validator": "^10.4.0"
   },
   "devDependencies": {
     "jest": "^23.4.2",
